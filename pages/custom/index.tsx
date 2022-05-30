@@ -1,9 +1,14 @@
+import Head from "next/head"
 import Feature2 from "../../components/feature2"
 import Form from "../../components/form/form"
 import Subpage from "../../components/subpage/subpage"
 
 const Custom = () => {
     return <>
+        <Head>
+            <title>Customization - Crosscheck</title>
+            <meta name="keywords" content="team, custom, customization" id="keywords" />
+        </Head>
         <Subpage props={{
             title: "Customization",
             content: <>

@@ -18,7 +18,7 @@ const MobileStoreButton = ({ props }: { props: MobileStoreButtonProps }) => {
             target="_blank"
             rel="noopener noreferrer"
         >
-            <img src={`${imageLinks[props.store as keyof typeof imageLinks]}`} className="max-h-[60px]" />
+            <img src={`${imageLinks[props.store as keyof typeof imageLinks]}`} alt="Mobile app store button" className="max-h-[60px]" />
         </a>
     );
 }

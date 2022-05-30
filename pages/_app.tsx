@@ -3,10 +3,18 @@ import type { AppProps } from 'next/app'
 import Header from '../components/header/header'
 import Footer from '../components/footer/footer'
 import HttpsRedirect from 'react-https-redirect';
+import Head from 'next/head';
 
 function MyApp({ Component, pageProps }: AppProps) {
   return <>
     <HttpsRedirect>
+      <Head>
+        <meta charSet="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Dynamic Team Composition - Crosscheck Sports enables customized sports team management." />
+        <meta name="author" content="Landersweb LLC" />
+        <meta name="keywords" content="sports, team, management, customization" id="keywords" />
+      </Head>
       <div className="text-txt bg-bg scroll-smooth">
         <div className="grid place-items-center">
           <div className="fixed top-0 z-50">

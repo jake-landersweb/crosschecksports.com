@@ -1,3 +1,4 @@
+import Head from "next/head"
 import Subpage from "../../../components/subpage/subpage"
 
 const GettingStarted = () => {
@@ -12,6 +13,10 @@ const GettingStarted = () => {
     }
 
     return <>
+        <Head>
+            <title>Getting Started - Crosscheck</title>
+            <meta name="keywords" content="team, schedule, support, help" id="keywords" />
+        </Head>
         <Subpage props={{
             title: "Getting Started",
             content: <>

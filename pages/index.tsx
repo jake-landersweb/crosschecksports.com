@@ -11,7 +11,10 @@ import Form from '../components/form/form'
 import CustomShowcase from '../components/showcase/customShowcase'
 
 const Home: NextPage = () => {
-  return (
+  return <div className="">
+    <Head>
+      <title>Crosscheck Sports</title>
+    </Head>
     <div className="pt-[50px] md:pt-[100px] space-y-24 md:space-y-36">
       <div className="space-y-8">
         <div className="grid place-items-center space-y-4 md:space-y-0 md:flex md:justify-between md:flex-row-reverse items-center">
@@ -85,7 +88,7 @@ const Home: NextPage = () => {
       <div className="bg-gray-300 h-[0.5px] w-full"  ></div>
       <CustomShowcase />
     </div>
-  )
+  </div>
 }
 
 export default Home

@@ -1,3 +1,4 @@
+import Head from "next/head"
 import Feature from "../../components/feature"
 import Feature2 from "../../components/feature2"
 import Form from "../../components/form/form"
@@ -7,6 +8,10 @@ import Subpage from "../../components/subpage/subpage"
 const TeamControl = () => {
 
     return <>
+        <Head>
+            <title>Team Control - Crosscheck</title>
+            <meta name="keywords" content="team, roster, subs, schedule, games, events" id="keywords" />
+        </Head>
         <Subpage props={{
             title: "Team Control",
             content: <>

@@ -1,9 +1,14 @@
+import Head from "next/head"
 import Feature2 from "../../components/feature2"
 import Form from "../../components/form/form"
 import Subpage from "../../components/subpage/subpage"
 
 const Social = () => {
     return <>
+        <Head>
+            <title>Social - Crosscheck</title>
+            <meta name="keywords" content="team, social, chat, stats" id="keywords" />
+        </Head>
         <Subpage props={{
             title: "Social Features",
             content: <>

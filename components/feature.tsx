@@ -28,7 +28,7 @@ const Feature = ({ props }: { props: FeatureProps }) => {
                 {/* description */}
                 {showLearnMore ? <>
                     <div className="grid place-items-center md:block">
-                        <Link href={route}>
+                        <Link href={route} scroll={true}>
                             <a className="text-main hover:text-txt-700 hover:opacity-50 transition-all">
                                 Learn more &rarr;
                             </a>

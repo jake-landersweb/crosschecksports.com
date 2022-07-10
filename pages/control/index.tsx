@@ -8,12 +8,9 @@ import Subpage from "../../components/subpage/subpage"
 const TeamControl = () => {
 
     return <>
-        <Head>
-            <title>Team Control - Crosscheck</title>
-            <meta name="keywords" content="team, roster, subs, schedule, games, events" id="keywords" />
-        </Head>
         <Subpage props={{
             title: "Team Control",
+            tags: "team,roster,subs,schedule,games,events",
             content: <>
                 <div className="space-y-16 md:space-y-32">
                     <Feature2 props={{
@@ -36,7 +33,11 @@ const TeamControl = () => {
                         assetAlt: "sports schedule creationr",
                         assetBg: "bg-main"
                     }} />
-                    <Form />
+                    <Form props={{
+                        nameLabel: undefined,
+                        emailLabel: undefined,
+                        bodyLabel: undefined
+                    }} />
                 </div>
             </>
         }} />

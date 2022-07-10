@@ -5,12 +5,9 @@ import Subpage from "../../components/subpage/subpage"
 
 const Custom = () => {
     return <>
-        <Head>
-            <title>Customization - Crosscheck</title>
-            <meta name="keywords" content="team, custom, customization" id="keywords" />
-        </Head>
         <Subpage props={{
             title: "Customization",
+            tags: "team,custom,customization",
             content: <>
                 <div className="space-y-16 md:space-y-32">
                     <Feature2 props={{
@@ -34,7 +31,11 @@ const Custom = () => {
                         assetAlt: "logo, color, background customization",
                         assetBg: "bg-purple-200"
                     }} />
-                    <Form />
+                    <Form props={{
+                        nameLabel: undefined,
+                        emailLabel: undefined,
+                        bodyLabel: undefined
+                    }} />
                 </div>
             </>
         }} />

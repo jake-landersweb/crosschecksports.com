@@ -11,12 +11,9 @@ const Support = () => {
 
 
     return <>
-        <Head>
-            <title>Support - Crosscheck</title>
-            <meta name="keywords" content="team, schedule, support, help" id="keywords" />
-        </Head>
         <Subpage props={{
             title: "How can we help?",
+            tags: "team,schedule,support,help",
             content: <>
                 <div className="space-y-16 md:space-y-32">
                     <Form props={{
@@ -26,13 +23,13 @@ const Support = () => {
                         {HelpCell("Getting Started", "/support/getting-started", <>
                             <IoHelpOutline size={50} className="text-main" />
                         </>)}
-                        {HelpCell("Team Control", "/team-control", <>
+                        {HelpCell("Team Control", "/control", <>
                             <AiOutlineTeam size={50} className="text-main" />
                         </>)}
                         {HelpCell("Customization", "/custom", <>
                             <BsGear size={50} className="text-main" />
                         </>)}
-                        {HelpCell("Social", "/social", <>
+                        {HelpCell("Social", "/communication", <>
                             <IoShareSocialOutline size={50} className="text-main" />
                         </>)}
                     </div>

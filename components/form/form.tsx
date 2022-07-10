@@ -3,10 +3,13 @@ import BaseShowcase from "../showcase/baseShowcase"
 import Field from "./field"
 
 type FormProps = {
+    nameLabel?: string
+    emailLabel?: string
     bodyLabel?: string
 }
 
-const Form = ({ props }: { props?: FormProps }) => {
+const Form = ({ props }: { props: FormProps }) => {
+    const { nameLabel = "Jason Perry", emailLabel = "jason@email.com", bodyLabel = "My custom team vision." } = props
     const [name, setName] = useState("")
     const [email, setEmail] = useState("")
     const [body, setBody] = useState("")
@@ -87,7 +90,7 @@ const Form = ({ props }: { props?: FormProps }) => {
             <Field props={{
                 value: name,
                 label: "Name",
-                placeholder: "Your name",
+                placeholder: nameLabel,
                 errorText: "Cannot be empty",
                 inputType: "text",
                 onChanged: (val) => setName(val),
@@ -96,7 +99,7 @@ const Form = ({ props }: { props?: FormProps }) => {
             <Field props={{
                 value: email,
                 label: "Email",
-                placeholder: "Your Email",
+                placeholder: emailLabel,
                 errorText: emailErrorText(),
                 inputType: "text",
                 onChanged: (val) => setEmail(val),
@@ -105,7 +108,7 @@ const Form = ({ props }: { props?: FormProps }) => {
             <Field props={{
                 value: body,
                 label: "Body",
-                placeholder: props?.bodyLabel ?? "Your ideal custom team experience",
+                placeholder: bodyLabel,
                 errorText: "Cannot be empty",
                 inputType: "text",
                 onChanged: (val) => setBody(val),

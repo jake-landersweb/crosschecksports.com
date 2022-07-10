@@ -87,8 +87,8 @@ const Header = () => {
                                     isCollapsed: scrollY > 50
                                 }} />
                             </>,
-                            titles: ["Team Control", "Customization", "Social"],
-                            routes: ["/team-control", "/custom", "/social"],
+                            titles: ["Control", "Communication", "Customization"],
+                            routes: ["/control", "/communication", "/custom"],
                         }} />
                         {/* <HeaderItem props={{
                             route: '/why-crosscheck',

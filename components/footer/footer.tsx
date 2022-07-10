@@ -3,7 +3,7 @@ import Image from "../image"
 import AppButtons from "../mobileButtons/appButtons"
 
 const Footer = () => {
-    return <div className="">
+    return <div id="download" className="">
         <div className="bg-gray-300 h-[0.5px] w-full"></div>
         <div className="grid place-items-center py-8">
             <div className="">

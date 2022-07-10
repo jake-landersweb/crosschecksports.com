@@ -6,6 +6,7 @@ import HttpsRedirect from "react-https-redirect";
 import Head from "next/head";
 
 function MyApp({ Component, pageProps }: AppProps) {
+
   return (
     <>
       <HttpsRedirect>

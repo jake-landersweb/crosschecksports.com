@@ -13,12 +13,9 @@ const GettingStarted = () => {
     }
 
     return <>
-        <Head>
-            <title>Getting Started - Crosscheck</title>
-            <meta name="keywords" content="team, schedule, support, help" id="keywords" />
-        </Head>
         <Subpage props={{
             title: "Getting Started",
+            tags: "team,schedule,support,help",
             content: <>
                 <div className="space-y-4">
                     {cell("Downloading", <>

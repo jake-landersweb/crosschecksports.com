@@ -25,7 +25,11 @@ const CustomShowcase = () => {
                         }} />
                     </div>
                     <div className="pt-8 lg:pt-0 lg:pr-8">
-                        <Form />
+                        <Form props={{
+                            nameLabel: undefined,
+                            emailLabel: undefined,
+                            bodyLabel: undefined
+                        }} />
                     </div>
                 </div>
             </>

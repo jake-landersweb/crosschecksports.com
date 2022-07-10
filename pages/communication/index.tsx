@@ -5,12 +5,9 @@ import Subpage from "../../components/subpage/subpage"
 
 const Social = () => {
     return <>
-        <Head>
-            <title>Social - Crosscheck</title>
-            <meta name="keywords" content="team, social, chat, stats" id="keywords" />
-        </Head>
         <Subpage props={{
-            title: "Social Features",
+            title: "Communication",
+            tags: "team,social,chat,stats",
             content: <>
                 <div className="space-y-16 md:space-y-32">
                     <Feature2 props={{
@@ -24,7 +21,11 @@ const Social = () => {
                         assetAlt: "team chat, stats, and status replies",
                         assetBg: "bg-main"
                     }} />
-                    <Form />
+                    <Form props={{
+                        nameLabel: undefined,
+                        emailLabel: undefined,
+                        bodyLabel: undefined
+                    }} />
                 </div>
             </>
         }} />

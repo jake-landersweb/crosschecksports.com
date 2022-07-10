@@ -17,7 +17,7 @@ const Home: NextPage = () => {
     </Head>
     <div className="pt-[50px] md:pt-[100px] space-y-24 md:space-y-36">
       <div className="space-y-8">
-        <div className="grid place-items-center space-y-4 md:space-y-0 md:flex md:justify-between md:flex-row-reverse items-center">
+        <div className="grid place-items-center space-y-4 md:space-y-0 lg:flex lg:justify-between lg:flex-row-reverse items-center">
           <Image props={{
             src: '/images/crosscheck_showcase.png',
             alt: 'crosscheck sports mobile app showcase',
@@ -25,17 +25,18 @@ const Home: NextPage = () => {
           }} />
           <div className="space-y-6">
             <div className='text-4xl md:text-6xl font-bold md:pr-10'>
-              <h2 className="whitespace-nowrap">Dynamic Team</h2>
-              <h2 className="">Composition.</h2>
+              <h2 className="whitespace-nowrap">Your Customizable</h2>
+              <h2 className="">Sports Management App.</h2>
             </div>
             <div className="body">
               <h2>We take the hassle out of team management.</h2>
               <h2>Customize Crosscheck to your team.</h2>
             </div>
+
             <div className="grid place-items-center md:block">
-              <Link href="/join-crosscheck">
+              <Link href="#download">
                 <a className='btn-main'>
-                  Join Now
+                  Download Now
                 </a>
               </Link>
             </div>
@@ -43,18 +44,31 @@ const Home: NextPage = () => {
         </div>
       </div>
       <Feature props={{
-        title: 'Team Control',
-        anchor: "team-control",
+        title: "Control",
+        anchor: "control",
         description: <>
           <div className="">
             <p>Attendance, subs, and events &mdash;creating and</p>
             <p>composing rosters and schedules has never been easier.</p>
           </div>
         </>,
-        route: "/team-control",
+        route: "/control",
         assetPath: '/images/team_control.png',
         assetAlt: 'Sports game create, roster management and user check in',
         assetBg: "bg-main"
+      }} />
+      <Feature props={{
+        title: 'Communication',
+        anchor: "communication",
+        description: <>
+          <div className="">
+            <p>Communicate and collaborate with your team</p>
+            <p>with group chat, stat tracking, and game time conversations.</p>
+          </div>
+        </>,
+        route: "/communication",
+        assetPath: '/images/social.png',
+        assetAlt: 'Team chat, statistics, and comments with replies',
       }} />
       <Feature props={{
         title: 'Customization',
@@ -67,20 +81,7 @@ const Home: NextPage = () => {
         </>,
         route: "/custom",
         assetPath: '/images/customization.png',
-        assetAlt: 'Crosscheck customization, user fields, colors, icons'
-      }} />
-      <Feature props={{
-        title: 'Social',
-        anchor: "social",
-        description: <>
-          <div className="">
-            <p>Communicate and collaborate with your team</p>
-            <p>with group chat, stat tracking, and game time conversations.</p>
-          </div>
-        </>,
-        route: "/social",
-        assetPath: '/images/social.png',
-        assetAlt: 'Team chat, statistics, and comments with replies',
+        assetAlt: 'Crosscheck customization, user fields, colors, icons',
         assetBg: "bg-main",
       }} />
       <div className="bg-gray-300 h-[0.5px] w-full"  ></div>

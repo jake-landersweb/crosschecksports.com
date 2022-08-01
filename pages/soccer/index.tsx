@@ -14,9 +14,12 @@ const Soccer = () => {
                 <div className="space-y-16 md:space-y-32 grid place-items-center">
                     <div className="space-y-16 md:space-y-32 max-w-[1000px]">
                         <h2 className="text-xl text-txt-600 text-center">
-                            Maybe you need an app to coordinate your saturday night adult soccer league. Maybe you already use the Crosscheck app and want a team for your kids soccer team. Whatever the use-case, the Crosscheck soccer template lets you collect and organize all the relavent information this soccer team may need.
+                            Do you need an app to coordinate your saturday night adult soccer league? Do you already use the Crosscheck app and want a team for your kids soccer team? Whatever the use-case, the Crosscheck soccer template lets you collect and organize all the relavent information this soccer team may need.
                         </h2>
                     </div>
+                    <CustomAppButtons props={{
+                        title: "Ready to build your soccer team?"
+                    }} />
                     <div className="space-y-2 px-4">
                         <h3 className="text-2xl text-center">How You Can Customize Your Experience</h3>
                         <div className="h-[1px] w-full bg-gray-200"></div>
@@ -62,9 +65,6 @@ const Soccer = () => {
                         reversed: false,
                     }} />
                     <SubpageExtras />
-                    <CustomAppButtons props={{
-                        title: "Ready to build your soccer team?"
-                    }} />
                     <div className="max-w-[1000px] w-full">
                         <Form props={{
                             nameLabel: "Christiano",

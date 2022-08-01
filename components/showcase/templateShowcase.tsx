@@ -56,7 +56,7 @@ const TemplateShowcase = () => {
                         <div className="pt-4">
                             <Link href={currentRoute} scroll={true}>
                                 <a className="text-main hover:text-txt-700 hover:opacity-50 transition-all">
-                                    Learn more &rarr;
+                                    Learn more about {currentSport.toLowerCase()} &rarr;
                                 </a>
                             </Link>
                         </div>

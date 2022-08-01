@@ -1,9 +1,10 @@
 import Form from "../../components/form/form"
 import Subpage from "../../components/subpage/subpage"
 
-import { IoHelpOutline, IoShareSocialOutline } from 'react-icons/io5'
+import { IoHelpOutline, IoShareSocialOutline, IoPeopleOutline } from 'react-icons/io5'
 import { AiOutlineTeam } from 'react-icons/ai'
-import { BsGear } from 'react-icons/bs'
+import { BsGear, BsCalendarWeek } from 'react-icons/bs'
+import { MdOutlinePrivacyTip, MdOutlineSportsTennis } from 'react-icons/md'
 import Link from "next/link"
 import Head from "next/head"
 
@@ -23,6 +24,15 @@ const Support = () => {
                         {HelpCell("Getting Started", "/support/getting-started", <>
                             <IoHelpOutline size={50} className="text-main" />
                         </>)}
+                        {HelpCell("Creating a Team", "/support/team-create", <>
+                            <IoPeopleOutline size={50} className="text-main" />
+                        </>)}
+                        {HelpCell("Creating a Season", "/support/season-create", <>
+                            <MdOutlineSportsTennis size={50} className="text-main" />
+                        </>)}
+                        {HelpCell("Creating an Event", "/support/event-create", <>
+                            <BsCalendarWeek size={50} className="text-main" />
+                        </>)}
                         {HelpCell("Team Control", "/control", <>
                             <AiOutlineTeam size={50} className="text-main" />
                         </>)}
@@ -31,6 +41,9 @@ const Support = () => {
                         </>)}
                         {HelpCell("Social", "/communication", <>
                             <IoShareSocialOutline size={50} className="text-main" />
+                        </>)}
+                        {HelpCell("Privacy Policy", "/privacy-policy", <>
+                            <MdOutlinePrivacyTip size={50} className="text-main" />
                         </>)}
                     </div>
                 </div>

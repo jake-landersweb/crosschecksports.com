@@ -33,21 +33,12 @@ const Header = () => {
         return <div className={className}>
             <div className="">
                 <HeaderItem props={{
-                    route: 'https://teams.crosschecksports.com/Account/Login',
-                    title: 'Sign In',
-                    onTap: () => closeMenu(),
-                    isCollapsed: scrollY > 50,
-                    isExternal: true,
-                }} />
-            </div>
-            <div className="">
-                <HeaderItem props={{
-                    route: 'https://teams.crosschecksports.com/Account/Register',
-                    title: 'Sign Up',
+                    route: '#download',
+                    title: 'Download Now',
                     onTap: () => closeMenu(),
                     isCollapsed: scrollY > 50,
                     className: "bg-main hover:bg-main hover:bg-opacity-100 bg-opacity-30 text-main hover:text-white",
-                    isExternal: true,
+                    isExternal: false,
                 }} />
             </div>
         </div>
@@ -64,14 +55,11 @@ const Header = () => {
                                 <div className="group flex items-center transition-all">
                                     {/* image can go here */}
                                     <Image props={{
-                                        src: '/svg/xcheck_blue.svg',
+                                        src: '/svg/xcheck_blue_text_dark.svg',
                                         alt: 'crosscheck sports logo',
-                                        divClass: "h-[40px] w-[40px]",
-                                        imgClass: undefined
+                                        divClass: "h-[40px]",
+                                        imgClass: "h-[40px]"
                                     }} />
-                                    <h1 className={`text-xl transition-all duration-300`}>
-                                        Crosscheck Sports
-                                    </h1>
                                 </div>
                             </a>
                         </Link>
@@ -120,7 +108,7 @@ const Header = () => {
                         </div>
                     </button>
                 ) : (
-                    <button onClick={handleClick} className={`md:hidden text-txt-400 w-10 h-10 relative focus:outline-none`}>
+                    <button onClick={handleClick} className={`md:hidden text-txt-400 w-10 h-10 relative focus:outline-none z-50`}>
                         <span className="sr-only">Open main menu</span>
                         <div
                             className="block w-5 absolute left-1/2 top-1/2   transform  -translate-x-1/2 -translate-y-1/2">
@@ -133,16 +121,8 @@ const Header = () => {
                     </button>
                 )}
                 <div
-                    className={`top-0 right-0 w-[75vw] pt-[100px] space-y-2 px-2 bg-bg-800 fixed h-full z-40 ease-in-out duration-300 ${isOpen ? "translate-x-0 " : "translate-x-full"}`}>
+                    className={`top-0 right-0 w-[75vw] pt-[100px] space-y-2 px-2 bg-bg-800 fixed h-screen z-40 ease-in-out duration-300 ${isOpen ? "translate-x-0 " : "translate-x-full"}`}>
                     <div className="space-y-2">
-                        {/* <div className="">
-                            <HeaderItem props={{
-                                route: '/why-crosscheck',
-                                title: 'Why Crosscheck?',
-                                onTap: () => closeMenu(),
-                                isCollapsed: scrollY > 50
-                            }} />
-                        </div> */}
                         <div className="space-y-2">
                             <div className="">
                                 <HeaderItem props={{

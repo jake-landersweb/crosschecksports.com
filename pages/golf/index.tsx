@@ -18,6 +18,9 @@ const Golf = () => {
                         </h2>
 
                     </div>
+                    <CustomAppButtons props={{
+                        title: "Ready to create your golf app?"
+                    }} />
                     <div className="space-y-2 px-4">
                         <h3 className="text-2xl text-center">How You Can Customize Your Experience</h3>
                         <div className="h-[1px] w-full bg-gray-200"></div>
@@ -63,9 +66,6 @@ const Golf = () => {
                         reversed: false,
                     }} />
                     <SubpageExtras />
-                    <CustomAppButtons props={{
-                        title: "Ready to create your golf app?"
-                    }} />
                     <div className="max-w-[1000px] w-full">
                         <Form props={{
                             nameLabel: "tiger",

@@ -29,17 +29,17 @@ const CustomAppButtons = ({ props }: { props: CustomAppButtonsProps }) => {
             <div className="space-y-4 md:space-y-0 md:flex md:space-x-8">
                 <div className='grid place-items-center'>
                     {appButton("https://apps.apple.com/pk/app/crosscheck-hockey/id1585600361", "App Store", <>
-                        <RiAppleFill size={50} />
+                        <RiAppleFill size={40} />
                     </>)}
                 </div>
                 <div className='grid place-items-center'>
                     {appButton("https://play.google.com/store/apps/details?id=com.landersweb.pnflutter", "Play Store", <>
-                        <FcGoogle size={50} />
+                        <FcGoogle size={40} />
                     </>)}
                 </div>
                 <div className='grid place-items-center'>
                     {appButton("https://teams.crosschecksports.com", "Crosscheck", <>
-                        <FaGlobeAmericas size={50} className="text-main" />
+                        <FaGlobeAmericas size={40} className="text-main" />
                     </>)}
                 </div>
             </div>

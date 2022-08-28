@@ -5,6 +5,8 @@ import HeaderItem from './headerItem';
 import HoverMenu from '../hoverMenu/hoverMenu';
 import { isExternal } from 'util/types';
 import Image from '../image';
+import HoverMenuType from '../hoverMenu/hoverMenuType';
+import HoverMenuItem from '../hoverMenu/hoverMenuItem';
 
 const Header = () => {
     const [scrollY, setScrollY] = useState(0);
@@ -46,7 +48,7 @@ const Header = () => {
 
 
     return (
-        <div className={`${scrollY > 50 ? "bg-bg-800 shadow-md py-2" : "bg-bg py-4 bg-opacity-50 backdrop-blur-sm"} items-center w-screen grid place-items-center transition-all duration-300`}>
+        <div className={`${scrollY > 50 ? "bg-bg-800 shadow-md" : "bg-bg bg-opacity-50 backdrop-blur-sm"} py-2 md:py-4 items-center w-screen grid place-items-center transition-all duration-300 fixed top-0 left-0`}>
             <div className="flex items-center justify-between max-w-[2000px] w-full px-2 lg:px-20 md:px-10">
                 <div className="flex space-x-4">
                     <div className="">
@@ -67,6 +69,42 @@ const Header = () => {
 
                     <div className="hidden md:flex">
                         <HoverMenu props={{
+                            title: "Features",
+                            type: HoverMenuType.header,
+                            content: <div className=''>
+                                <HoverMenuItem props={{
+                                    title: 'Control',
+                                    href: '/control',
+                                    isExternal: false,
+                                }} />
+                                <HoverMenuItem props={{
+                                    title: 'Communication',
+                                    href: '/communication',
+                                    isExternal: false,
+                                }} />
+                                <HoverMenuItem props={{
+                                    title: 'Customization',
+                                    href: '/custom',
+                                    isExternal: false,
+                                }} />
+                                {/* <HoverMenuItem props={{
+                        title: 'Cloud Infrastructure',
+                        href: '/cloud-infrastructure',
+                        isExternal: false,
+                    }} />
+                    <HoverMenuItem props={{
+                        title: 'App Integrations',
+                        href: '/app-integrations',
+                        isExternal: false,
+                    }} />
+                    <HoverMenuItem props={{
+                        title: 'Technology Sourcing',
+                        href: '/technology-sourcing',
+                        isExternal: false,
+                    }} /> */}
+                            </div>
+                        }} />
+                        {/* <HoverMenu props={{
                             label: <>
                                 <HeaderItem props={{
                                     route: '/',
@@ -77,7 +115,7 @@ const Header = () => {
                             </>,
                             titles: ["Control", "Communication", "Customization"],
                             routes: ["/control", "/communication", "/custom"],
-                        }} />
+                        }} /> */}
                         {/* <HeaderItem props={{
                             route: '/why-crosscheck',
                             title: 'Why Crosscheck?',
@@ -126,7 +164,7 @@ const Header = () => {
                         <div className="space-y-2">
                             <div className="">
                                 <HeaderItem props={{
-                                    route: '/team-control',
+                                    route: '/control',
                                     title: 'Team Control',
                                     onTap: () => closeMenu(),
                                     isCollapsed: scrollY > 50
@@ -142,8 +180,8 @@ const Header = () => {
                             </div>
                             <div className="">
                                 <HeaderItem props={{
-                                    route: '/social',
-                                    title: 'Social',
+                                    route: '/communication',
+                                    title: 'Communication',
                                     onTap: () => closeMenu(),
                                     isCollapsed: scrollY > 50
                                 }} />

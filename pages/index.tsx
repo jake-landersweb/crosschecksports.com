@@ -9,41 +9,20 @@ import TemplateShowcase from '../components/showcase/templateShowcase'
 import AppButtons from '../components/mobileButtons/appButtons'
 import Form from '../components/form/form'
 import CustomShowcase from '../components/showcase/customShowcase'
+import Landing from '../components/landing'
+import { useState } from 'react'
 
 const Home: NextPage = () => {
+
+
+
   return <div className="">
     <Head>
       <title>Crosscheck Sports</title>
     </Head>
-    <div className="pt-[50px] md:pt-[100px] space-y-24 md:space-y-36">
+    <div className="pt-[50px] md:pt-[50px] space-y-24 md:space-y-36">
       <div className="space-y-8">
-        <div className="grid place-items-center">
-          <div className="grid place-items-center space-y-4 md:space-y-0 lg:flex lg:flex-row-reverse items-center">
-            <Image props={{
-              src: '/gifs/main.gif',
-              alt: 'crosscheck sports mobile app showcase',
-              divClass: "bg-black p-2 rounded-[34px]",
-              imgClass: "max-h-[500px] rounded-lg"
-            }} />
-            <div className="space-y-6">
-              <div className='text-4xl md:text-6xl font-bold md:pr-10'>
-                <h2 className="whitespace-nowrap">Your Customizable</h2>
-                <h2 className="">Sports Management App.</h2>
-              </div>
-              <div className="body">
-                <h2>We take the hassle out of team management.</h2>
-                <h2>Customize Crosscheck to your team.</h2>
-              </div>
-              <div className="grid place-items-center md:block">
-                <Link href="#download">
-                  <a className='btn-main'>
-                    Download Now
-                  </a>
-                </Link>
-              </div>
-            </div>
-          </div>
-        </div>
+        <Landing />
       </div>
       <Feature props={{
         title: "Control",

@@ -18,7 +18,7 @@ const CustomShowcase = () => {
                 <div className="lg:flex lg:flex-row-reverse items-center">
                     <div className="">
                         <Image props={{
-                            src: "/images/puck_norris_site.png",
+                            src: "/images/pn-multiplatform.png",
                             alt: "custom sports team site",
                             divClass: "max-w-[1000px]",
                             imgClass: `rounded-md border-[1px] border-gray-300 shadow-xl bg-pn bg-opacity-30`

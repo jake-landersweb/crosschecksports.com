@@ -1,0 +1,15 @@
+
+.cursor {
+    animation-name: frames;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes frames {
+  0%   {opacity: 0}
+  20%  {opacity: 0}
+  40%  {opacity: 0}
+  60%  {opacity: 1}
+  80% {opacity: 1}
+  100% {opacity: 1}
+}

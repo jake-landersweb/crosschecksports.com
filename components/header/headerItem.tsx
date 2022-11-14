@@ -16,14 +16,14 @@ const HeaderItem = ({ props }: { props: HeaderItemProps }) => {
     return <>
         {isExternal ? <>
             <a href={route} onClick={onTap} target="_blank" rel="noopener noreferrer">
-                <p className={`${className} btn-sub`}>
+                <p className={`${className} headerItem`}>
                     {title}
                 </p>
             </a>
         </> : <>
             <Link href={route}>
                 <a onClick={onTap}>
-                    <p className={`${className} btn-sub`}>
+                    <p className={`${className} headerItem`}>
                         {title}
                     </p>
                 </a>

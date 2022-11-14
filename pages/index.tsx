@@ -11,65 +11,48 @@ import Form from '../components/form/form'
 import CustomShowcase from '../components/showcase/customShowcase'
 import Landing from '../components/landing'
 import { useState } from 'react'
+import TypeWriter from '../components/typewriter/typewriter'
+import Features from '../components/features'
+import BoundsWrapper from '../components/boundsWrapper'
+import Difference from '../components/difference'
+import Sports from '../components/sports'
+import AdditionalFeatures from '../components/addFeatures'
 
 const Home: NextPage = () => {
 
+  const desc = "Crosscheck Sports gives you unmatched features and customization to easily manage your sports team. From adult league to AAA, we got you covered."
 
-
-  return <div className="">
-    <Head>
-      <title>Crosscheck Sports</title>
-    </Head>
-    <div className="pt-[50px] md:pt-[50px] space-y-24 md:space-y-36">
-      <div className="space-y-8">
-        <Landing />
+  return <div className="space-y-16 md:space-y-32">
+    <BoundsWrapper>
+      <div className="space-y-16 md:space-y-32">
+        <div className="md:flex items-center space-y-4 md:space-y-0 md:space-x-4 min-h-[70vh]">
+          <div className="md:space-y-2">
+            <h2 className='title text-center md:text-left'>The <span className='text-main'>Best</span> Way To Organize Your <br className='lg:hidden' /><TypeWriter props={{
+              values: ['Sports Team', "Hockey Team", "Golf Club", "Basketball Team", "Football Team", "Soccer Club", "Football Team"],
+              className: "text-main",
+              cursorClass: "text-txt",
+              infinite: true,
+            }} /></h2>
+            <p className='subtext-lg hidden md:block'>{desc}</p>
+          </div>
+          <Image props={{
+            src: '/svg/game-day.svg',
+            alt: 'Game Day',
+            divClass: "",
+            imgClass: ""
+          }} />
+          <p className='subtext-lg text-center md:hidden'>{desc}</p>
+        </div>
+        <Difference />
       </div>
-      <Feature props={{
-        title: "Control",
-        anchor: "control",
-        description: <>
-          <div className="">
-            <p>Attendance, subs, and events &mdash;creating and</p>
-            <p>composing rosters and schedules has never been easier.</p>
-          </div>
-        </>,
-        route: "/control",
-        assetPath: '/images/team_control.png',
-        assetAlt: 'Sports game create, roster management and user check in',
-        assetBg: "bg-main"
-      }} />
-      <Feature props={{
-        title: 'Communication',
-        anchor: "communication",
-        description: <>
-          <div className="">
-            <p>Communicate and collaborate with your team</p>
-            <p>with group chat, stat tracking, and game time conversations.</p>
-          </div>
-        </>,
-        route: "/communication",
-        assetPath: '/images/social.png',
-        assetAlt: 'Team chat, statistics, and comments with replies',
-      }} />
-      <Feature props={{
-        title: 'Customization',
-        anchor: "custom",
-        description: <>
-          <div className="">
-            <p>Tailor-make the Crosscheck experience for your team.</p>
-            <p>Colors, icons, and extra information at every level.</p>
-          </div>
-        </>,
-        route: "/custom",
-        assetPath: '/images/customization.png',
-        assetAlt: 'Crosscheck customization, user fields, colors, icons',
-        assetBg: "bg-main",
-      }} />
-      <div className="bg-gray-300 h-[0.5px] w-full"  ></div>
-      <TemplateShowcase />
-      <div className="bg-gray-300 h-[0.5px] w-full"  ></div>
-      <CustomShowcase />
-    </div>
+    </BoundsWrapper>
+    <Features />
+    <BoundsWrapper>
+      <div className="space-y-16 md:space-y-32">
+        <Sports />
+        <AdditionalFeatures />
+      </div>
+    </BoundsWrapper>
   </div>
 }
 

@@ -3,28 +3,28 @@
 @tailwind utilities;
 
 @layer components {
-  .btn-main {
-    @apply bg-main text-base font-medium rounded-sm px-6 py-3 bg-opacity-30 hover:bg-opacity-100 text-main hover:text-white duration-300
+  .headerItem {
+    @apply font-medium text-lg tracking-tight px-4 py-2 md:hover:bg-bg-700 transition-colors rounded-md;
   }
 
-  .btn-sub {
-    @apply rounded-sm text-base font-medium hover:bg-black hover:bg-opacity-5 transition-all cursor-pointer px-4 py-2
+  .title {
+    @apply text-4xl md:text-5xl tracking-tight font-bold;
   }
 
-  .btn-error {
-    @apply bg-red-300 text-base font-medium rounded-sm px-6 py-3 hover:bg-red-600 text-white duration-300
+  .title-sm {
+    @apply text-3xl md:text-4xl tracking-tight font-bold;
   }
 
-  .body {
-    @apply text-lg text-txt-700 font-light
+  .subtext {
+    @apply text-gray-500;
   }
 
-  .label {
-    @apply text-2xl
+  .subtext-lg {
+    @apply text-gray-500 text-lg leading-6;
   }
 
-  .header {
-    @apply text-4xl font-semibold
+  .title-sub {
+    @apply text-2xl font-semibold tracking-tight;
   }
 }
 

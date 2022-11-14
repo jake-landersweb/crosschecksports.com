@@ -48,9 +48,9 @@ const Header = () => {
 
 
     return (
-        <div className={`${scrollY > 50 ? "bg-bg-800 shadow-md" : "bg-bg bg-opacity-50 backdrop-blur-sm"} py-2 md:py-4 items-center w-screen grid place-items-center transition-all duration-300 fixed top-0 left-0`}>
+        <div className={`${scrollY > 50 ? "bg-bg-800 shadow-md" : "bg-bg bg-opacity-50 backdrop-blur-sm md:py-4"} py-2 items-center w-screen grid place-items-center transition-all duration-300 fixed top-0 left-0`}>
             <div className="flex items-center justify-between max-w-[2000px] w-full px-2 lg:px-20 md:px-10">
-                <div className="flex space-x-4">
+                <div className="flex space-x-4 w-full">
                     <div className="">
                         <Link href="/">
                             <a onClick={(e) => closeMenu()}>
@@ -66,15 +66,25 @@ const Header = () => {
                             </a>
                         </Link>
                     </div>
-
-                    <div className="hidden md:flex">
+                    <div className="hidden md:flex justify-around w-full">
                         <HoverMenu props={{
                             title: "Features",
+                            defaultLink: "#features",
                             type: HoverMenuType.header,
                             content: <div className=''>
                                 <HoverMenuItem props={{
-                                    title: 'Control',
-                                    href: '/control',
+                                    title: 'Schedule Management',
+                                    href: '/schedule-management',
+                                    isExternal: false,
+                                }} />
+                                <HoverMenuItem props={{
+                                    title: 'Roster Management',
+                                    href: '/roster-management',
+                                    isExternal: false,
+                                }} />
+                                <HoverMenuItem props={{
+                                    title: 'Customization',
+                                    href: '/customization',
                                     isExternal: false,
                                 }} />
                                 <HoverMenuItem props={{
@@ -83,55 +93,95 @@ const Header = () => {
                                     isExternal: false,
                                 }} />
                                 <HoverMenuItem props={{
-                                    title: 'Customization',
-                                    href: '/custom',
+                                    title: 'Stats',
+                                    href: '/stats',
                                     isExternal: false,
                                 }} />
-                                {/* <HoverMenuItem props={{
-                        title: 'Cloud Infrastructure',
-                        href: '/cloud-infrastructure',
-                        isExternal: false,
-                    }} />
-                    <HoverMenuItem props={{
-                        title: 'App Integrations',
-                        href: '/app-integrations',
-                        isExternal: false,
-                    }} />
-                    <HoverMenuItem props={{
-                        title: 'Technology Sourcing',
-                        href: '/technology-sourcing',
-                        isExternal: false,
-                    }} /> */}
+                                <HoverMenuItem props={{
+                                    title: 'Lineups',
+                                    href: '/lineups',
+                                    isExternal: false,
+                                }} />
+                                <HoverMenuItem props={{
+                                    title: 'Multiple Seasons',
+                                    href: '/multiple-seasons',
+                                    isExternal: false,
+                                }} />
+                                <HoverMenuItem props={{
+                                    title: 'Polls',
+                                    href: '/polls',
+                                    isExternal: false,
+                                }} />
+                                <HoverMenuItem props={{
+                                    title: 'Checkin Notifications',
+                                    href: '/checkin-notifications',
+                                    isExternal: false,
+                                }} />
+                                <HoverMenuItem props={{
+                                    title: 'Schedule Export',
+                                    href: '/schedule-export',
+                                    isExternal: false,
+                                }} />
                             </div>
                         }} />
-                        {/* <HoverMenu props={{
-                            label: <>
-                                <HeaderItem props={{
-                                    route: '/',
-                                    title: 'Features',
-                                    onTap: () => closeMenu(),
-                                    isCollapsed: scrollY > 50
+                        <HoverMenu props={{
+                            title: "Sports",
+                            defaultLink: "#sports",
+                            type: HoverMenuType.header,
+                            content: <div className=''>
+                                <HoverMenuItem props={{
+                                    title: 'Ice Hockey',
+                                    href: '/ice-hockey',
+                                    isExternal: false,
                                 }} />
-                            </>,
-                            titles: ["Control", "Communication", "Customization"],
-                            routes: ["/control", "/communication", "/custom"],
-                        }} /> */}
-                        {/* <HeaderItem props={{
-                            route: '/why-crosscheck',
-                            title: 'Why Crosscheck?',
-                            onTap: () => closeMenu(),
-                            isCollapsed: scrollY > 50
-                        }} /> */}
+                                <HoverMenuItem props={{
+                                    title: 'Golf',
+                                    href: '/golf',
+                                    isExternal: false,
+                                }} />
+                                <HoverMenuItem props={{
+                                    title: 'Basketball',
+                                    href: '/basketball',
+                                    isExternal: false,
+                                }} />
+                                <HoverMenuItem props={{
+                                    title: 'Football',
+                                    href: '/football',
+                                    isExternal: false,
+                                }} />
+                                <HoverMenuItem props={{
+                                    title: 'Soccer',
+                                    href: '/soccer',
+                                    isExternal: false,
+                                }} />
+                                <HoverMenuItem props={{
+                                    title: 'Baseball',
+                                    href: '/baseball',
+                                    isExternal: false,
+                                }} />
+                            </div>
+                        }} />
                         <HeaderItem props={{
                             route: '/support',
                             title: 'Support',
                             onTap: () => closeMenu(),
                             isCollapsed: scrollY > 50
                         }} />
+                        <HeaderItem props={{
+                            route: '#download',
+                            title: 'Download',
+                            onTap: () => closeMenu(),
+                            isCollapsed: scrollY > 50
+                        }} />
+                        <HeaderItem props={{
+                            route: 'https://teams.crosschecksports.com',
+                            title: 'Login',
+                            onTap: () => closeMenu(),
+                            isExternal: true,
+                            isCollapsed: scrollY > 50
+                        }} />
                     </div>
                 </div>
-                {/* The full sized menu */}
-                {menu("hidden md:flex space-x-2")}
                 {/* Mobile menu */}
                 {isOpen ? (
                     <button onClick={handleClick} className={`md:hidden text-txt-400 w-10 h-10 focus:outline-none fixed right-2 z-50`}>

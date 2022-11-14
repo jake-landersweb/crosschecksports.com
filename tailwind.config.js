@@ -5,11 +5,6 @@ module.exports = {
   ],
   theme: {
     extend: {
-      borderRadius: {
-        'sm': "5px",
-        "md": "10px",
-        "lg": "20px",
-      },
       colors: {
         bg: {
           DEFAULT: "#fff",
@@ -20,6 +15,12 @@ module.exports = {
           DEFAULT: "#7bc5d6",
           400: "#3AA3BB",
         },
+        // acc: "#001C55",
+        // acc: "#FE6D73",
+        'acc': "#2F3D54",
+        // acc: "#001242",
+        // acc: "#B5446E",
+        // acc: "#BD8B9C",
         pn: "#ffcb06",
         txt: {
           DEFAULT: "#3B414E",

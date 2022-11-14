@@ -13,7 +13,7 @@ const HoverMenuItem = ({ props }: { props: HoverMenuItemProps }) => {
         return <>
             <div className="">
                 <a href={href} target="_blank" rel="noopener noreferrer">
-                    <div className="hover:bg-bg-700 py-2 px-4 cursor-pointer rounded-md">
+                    <div className="md:hover:bg-bg-700 py-2 px-4 cursor-pointer rounded-md">
                         <p>{title}</p>
                     </div>
                 </a>
@@ -23,7 +23,7 @@ const HoverMenuItem = ({ props }: { props: HoverMenuItemProps }) => {
         return <>
             <Link href={href} passHref>
                 <a className="">
-                    <div className="hover:bg-bg-700 py-2 px-4 cursor-pointer rounded-md">
+                    <div className="md:hover:bg-bg-700 py-2 px-4 cursor-pointer rounded-md">
                         <p>{title}</p>
                     </div>
                 </a>

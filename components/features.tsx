@@ -29,8 +29,8 @@ export default function Features() {
         </div>
     }
 
-    return <div id="features" className="w-screen bg-acc -skew-y-[5deg] py-24 text-white">
-        <div className="skew-y-[5deg]">
+    return <div className="w-screen bg-acc -skew-y-[5deg] py-24 text-white">
+        <div id="features" className="skew-y-[5deg]">
             <BoundsWrapper>
                 <div className="space-y-8">
                     <div className=" grid place-items-center space-y-2">

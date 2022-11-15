@@ -40,7 +40,7 @@ const Field = ({ props }: { props: FieldArgs }) => {
                 </h3>
                 {showMessage() ? <h3 className="text-red-300 font-medium text-md">{props.errorText}</h3> : <></>}
             </div>
-            <textarea className={`${showMessage() ? "focus:border-red-300" : "focus:border-main"} resize-none py-2 px-4 w-full bg-bg-800 rounded-md border-transparent border text-txt focus:outline-none overflow-y-scroll ${props.height ?? "h-[500px]"}`} onChange={fieldChanged} placeholder={props.placeholder} value={props.value} rows={props.rows ?? 8} cols={props.columns ?? 50}></textarea>
+            <textarea className={`${showMessage() ? "focus:border-red-300" : "focus:border-main"} resize-none py-2 px-4 w-full bg-bg-800 rounded-md border-transparent border-2 text-txt focus:outline-none overflow-y-scroll ${props.height ?? "h-[500px]"}`} onChange={fieldChanged} placeholder={props.placeholder} value={props.value} rows={props.rows ?? 8} cols={props.columns ?? 50}></textarea>
         </div>
     } else {
         return (
@@ -51,7 +51,7 @@ const Field = ({ props }: { props: FieldArgs }) => {
                     </h3>
                     {showMessage() ? <h3 className="text-red-300 font-medium text-md">{props.errorText}</h3> : <></>}
                 </div>
-                <input className={`${showMessage() ? "focus:border-red-300" : "focus:border-main"} py-2 px-4 w-full bg-bg-800 rounded-md border-transparent border text-txt focus:outline-none`} placeholder={props.placeholder} type={props.inputType} value={props.value} onChange={fieldChanged} />
+                <input className={`${showMessage() ? "focus:border-red-300" : "focus:border-main"} py-2 px-4 w-full bg-bg-800 rounded-md border-transparent border-2 text-txt focus:outline-none`} placeholder={props.placeholder} type={props.inputType} value={props.value} onChange={fieldChanged} />
             </div>
         )
     }

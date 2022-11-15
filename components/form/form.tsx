@@ -94,7 +94,7 @@ const Form = ({ props }: { props: FormProps }) => {
                 errorText: "Cannot be empty",
                 inputType: "text",
                 onChanged: (val) => setName(val),
-                isValid: name != "",
+                isValid: true,
             }} />
             <Field props={{
                 value: email,
@@ -103,7 +103,7 @@ const Form = ({ props }: { props: FormProps }) => {
                 errorText: emailErrorText(),
                 inputType: "text",
                 onChanged: (val) => setEmail(val),
-                isValid: emailIsValid(),
+                isValid: true,
             }} />
             <Field props={{
                 value: body,
@@ -112,7 +112,7 @@ const Form = ({ props }: { props: FormProps }) => {
                 errorText: "Cannot be empty",
                 inputType: "text",
                 onChanged: (val) => setBody(val),
-                isValid: body != "",
+                isValid: true,
                 isTextArea: true,
                 rows: 1,
                 height: "h-[200px]"

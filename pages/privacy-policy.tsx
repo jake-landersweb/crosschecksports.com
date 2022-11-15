@@ -1,5 +1,7 @@
+import BoundsWrapper from "../components/boundsWrapper"
+
 const PrivacyPolicy = () => {
-    return <>
+    return <BoundsWrapper>
         <div className="space-y-2">
             <h1 className="text-4xl font-bold">Privacy Policy</h1>
 
@@ -117,7 +119,7 @@ const PrivacyPolicy = () => {
 
             <p>--  Jake Landers jake@crosschecksports.com</p>
         </div>
-    </>
+    </BoundsWrapper>
 }
 
 export default PrivacyPolicy

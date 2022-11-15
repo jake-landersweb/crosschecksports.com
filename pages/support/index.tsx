@@ -62,7 +62,7 @@ const HelpCell = (title: string, route: string, icon: JSX.Element) => {
                     <div className="grid place-items-center">
                         {icon}
                     </div>
-                    <h3 className="text-xl font-medium group-hover:text-main transition-all grid place-items-center">{title}</h3>
+                    <h3 className="text-xl text-center font-medium group-hover:text-main transition-all grid place-items-center">{title}</h3>
                 </div>
             </div>
         </Link>

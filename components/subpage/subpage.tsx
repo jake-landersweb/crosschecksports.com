@@ -1,4 +1,5 @@
 import Head from "next/head"
+import BoundsWrapper from "../boundsWrapper"
 
 type SubpageProps = {
     title: string
@@ -10,7 +11,7 @@ type SubpageProps = {
 
 const Subpage = ({ props }: { props: SubpageProps }) => {
     const { title, content, barTitle, tags, maxWidth = 1000 } = props;
-    return <>
+    return <BoundsWrapper>
         <Head>
             <title>{barTitle ?? title} - Crosscheck</title>
             <meta name="keywords" content={tags} id="keywords" />
@@ -18,12 +19,12 @@ const Subpage = ({ props }: { props: SubpageProps }) => {
         <div className="grid place-items-center">
             <div className={`max-w-[${maxWidth}px] w-full space-y-8 md:space-y-32`}>
                 <div className="grid place-items-center">
-                    <h2 className="text-4xl md:text-6xl md:pt-[50px] font-medium">{title}</h2>
+                    <h2 className="text-4xl md:text-6xl md:pt-[50px] font-medium tracking-tight">{title}</h2>
                 </div>
                 {content}
             </div>
         </div>
-    </>
+    </BoundsWrapper>
 }
 
 export default Subpage

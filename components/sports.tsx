@@ -14,9 +14,9 @@ export default function Sports() {
             {/* </div> */}
             <Link props={{
                 href: href,
-                child: <h3>{title} &rarr;</h3>,
+                child: <h3>{title}</h3>,
                 isExternal: false,
-                className: "title-sub md:hover:text-main md:hover:underline transition-all"
+                className: "subtext-lg md:hover:text-main md:hover:underline transition-all"
             }} />
         </div>
     }

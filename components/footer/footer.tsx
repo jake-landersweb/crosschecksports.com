@@ -3,11 +3,15 @@ import Image from "../image"
 import AppButtons from "../mobileButtons/appButtons"
 import CustomAppButtons from "../mobileButtons/customButtons"
 import { FaGlobeAmericas } from 'react-icons/fa'
+import FormOnboard from "../form/formOnboard"
+import BoundsWrapper from "../boundsWrapper"
 
 const Footer = () => {
-    return <div id="download" className="">
-        <div className="bg-gray-300 h-[0.5px] w-full"></div>
-        <div className="grid place-items-center py-8">
+    return <div className="bg-txt pt-24">
+        <BoundsWrapper>
+            <FormOnboard />
+        </BoundsWrapper>
+        <div id="download" className="grid place-items-center py-8">
             <div className="">
                 <div className="grid place-items-center">
                     <div className="pt-4">
@@ -16,8 +20,7 @@ const Footer = () => {
                 </div>
             </div>
         </div>
-
-        <footer className="p-4 sm:p-6 bg-txt">
+        <footer className="p-4 sm:p-6 border-t border-t-gray-600">
             <div className="md:flex md:justify-between">
                 <div className="mb-6 md:mb-0">
                     <Link href="https://crosschecksports.com" passHref>
@@ -32,7 +35,6 @@ const Footer = () => {
                         <ul className="text-gray-400">
                             <li className="mb-4">
                                 <Link href="/support" passHref><a className="hover:underline">Support</a></Link>
-
                             </li>
                             <li className="mb-4">
                                 <Link href="/privacy-policy" passHref><a className="hover:underline">Privacy Policy</a></Link>
@@ -65,7 +67,7 @@ const Footer = () => {
             </div>
             <hr className="my-6 sm:mx-auto border-gray-700 lg:my-8" />
             <div className="sm:flex sm:items-center sm:justify-between">
-                <span className="text-sm sm:text-center text-gray-400">© 2022 <a href="https://landersweb.com" className="hover:underline">Landersweb™</a>. All Rights Reserved.
+                <span className="text-sm sm:text-center text-gray-400">© 2022 <a href="https://sapphirenw.com" className="hover:underline">Sapphire</a>. All Rights Reserved.
                 </span>
                 <div className="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
                     <a href="https://www.instagram.com/xchecksports/" target="_blank" rel="noopener noreferrer" className="text-gray-500 hover:text-white">

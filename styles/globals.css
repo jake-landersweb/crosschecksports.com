@@ -26,6 +26,14 @@
   .title-sub {
     @apply text-2xl font-semibold tracking-tight;
   }
+
+  .btn-main {
+    @apply bg-main text-base font-medium rounded-md px-6 py-3 bg-opacity-30 md:hover:bg-opacity-100 text-main md:hover:text-white duration-300
+  }
+
+  .btn-error {
+    @apply bg-red-300 text-base font-medium rounded-md px-6 py-3 md:hover:bg-red-600 text-white duration-300
+  }
 }
 
 html {

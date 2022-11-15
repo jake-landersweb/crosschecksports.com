@@ -67,10 +67,10 @@ function MyApp({ Component, pageProps }: AppProps) {
       <div className="fixed top-0 z-50">
         <Header />
       </div>
-      <div className="relative pt-[100px] pb-24 md:pb-36">
+      <div className="relative pt-[100px]">
         <Component {...pageProps} />
       </div>
-      <div className="pt-4 w-full">
+      <div className="w-full">
         <Footer />
       </div>
     </div>

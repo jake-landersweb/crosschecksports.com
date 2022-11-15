@@ -14,7 +14,7 @@ const HoverMenu = ({ props }: { props: HoverMenuProps }) => {
 
     const titleClass = () => {
         switch (type) {
-            case HoverMenuType.header: return "headerItem"
+            case HoverMenuType.header: return "headerItem pl-4 pr-2"
             case HoverMenuType.action: return ""
             case HoverMenuType.sub: return ""
         }

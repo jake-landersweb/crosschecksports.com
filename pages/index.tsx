@@ -17,12 +17,13 @@ import BoundsWrapper from '../components/boundsWrapper'
 import Difference from '../components/difference'
 import Sports from '../components/sports'
 import AdditionalFeatures from '../components/addFeatures'
+import FormOnboard from '../components/form/formOnboard'
 
 const Home: NextPage = () => {
 
   const desc = "Crosscheck Sports gives you unmatched features and customization to easily manage your sports team. From adult league to AAA, we got you covered."
 
-  return <div className="space-y-16 md:space-y-32">
+  return <div className="space-y-16 md:space-y-32 pb-24 md:pb-36">
     <BoundsWrapper>
       <div className="space-y-16 md:space-y-32">
         <div className="md:flex items-center space-y-4 md:space-y-0 md:space-x-4 min-h-[70vh]">

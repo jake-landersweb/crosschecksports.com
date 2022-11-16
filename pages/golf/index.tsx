@@ -16,11 +16,7 @@ const Golf = () => {
                         <h2 className="text-xl text-txt-600 text-center">
                             Golf is a unique beast to tackle with a sports management app. The events and communication is like other sports, but the customization and stats do not quite fit into the same mold as other sports. The Crosscheck Sports golf template is a demonstration to show how flexible the engine is by letting you manage a golf season and another sports season within the same team.
                         </h2>
-
                     </div>
-                    <CustomAppButtons props={{
-                        title: "Ready to create your golf app?"
-                    }} />
                     <div className="space-y-2 px-4">
                         <h3 className="text-2xl text-center">How You Can Customize Your Experience</h3>
                         <div className="h-[1px] w-full bg-gray-200"></div>
@@ -66,13 +62,6 @@ const Golf = () => {
                         reversed: false,
                     }} />
                     <SubpageExtras />
-                    <div className="max-w-[1000px] w-full">
-                        <Form props={{
-                            nameLabel: "tiger",
-                            emailLabel: "woods@golf.com",
-                            bodyLabel: "My golf app vision"
-                        }} />
-                    </div>
                 </div>
             </>
         }} />

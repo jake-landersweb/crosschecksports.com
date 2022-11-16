@@ -46,7 +46,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
       <meta name="msapplication-TileColor" content="#2b5797" />
       <meta name="theme-color" content="#ffffff" />
-      {/* <script
+      <script
         async
         src={`https://www.googletagmanager.com/gtag/js?id=G-JJ9RT96D8Q`}
       />
@@ -61,7 +61,7 @@ function MyApp({ Component, pageProps }: AppProps) {
             });
           `,
         }}
-      /> */}
+      />
     </Head>
     <div className="grid place-items-center">
       <div className="fixed top-0 z-50">

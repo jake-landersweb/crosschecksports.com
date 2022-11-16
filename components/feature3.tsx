@@ -16,7 +16,7 @@ const Feature3 = ({ props }: { props: Feature3Props }) => {
         <div className={`${reversed ? "md:flex-row-reverse" : ""} grid place-items-center md:flex md:justify-between md:items-center space-y-4 md:space-y-0 md:space-x-2`}>
             <div className={`${reversed ? "md:pl-8" : ""} space-y-4 md:pr-4`}>
                 {/* title */}
-                <h3 className={`${reversed ? "text-right" : ""} header grid place-items-center md:block`}>
+                <h3 className={`${reversed ? "text-right" : ""} title-sub grid place-items-center md:block`}>
                     {title}
                 </h3>
                 {/* description */}

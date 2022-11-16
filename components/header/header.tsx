@@ -92,7 +92,7 @@ const Header = () => {
                                     href: '/communication',
                                     isExternal: false,
                                 }} />
-                                <HoverMenuItem props={{
+                                {/* <HoverMenuItem props={{
                                     title: 'Stats',
                                     href: '/stats',
                                     isExternal: false,
@@ -121,7 +121,7 @@ const Header = () => {
                                     title: 'Schedule Export',
                                     href: '/schedule-export',
                                     isExternal: false,
-                                }} />
+                                }} /> */}
                             </div>
                         }} />
                         <HoverMenu props={{
@@ -209,20 +209,28 @@ const Header = () => {
                     </button>
                 )}
                 <div
-                    className={`top-0 right-0 w-[75vw] pt-[100px] space-y-2 px-2 bg-bg-800 fixed h-screen z-40 ease-in-out duration-300 ${isOpen ? "translate-x-0 " : "translate-x-full"}`}>
+                    className={`top-0 right-0 w-[75vw] pt-[75px] space-y-2 px-2 bg-bg-800 fixed h-screen z-40 ease-in-out duration-300 ${isOpen ? "translate-x-0 " : "translate-x-full"}`}>
                     <div className="space-y-2">
                         <div className="space-y-2">
                             <div className="">
                                 <HeaderItem props={{
-                                    route: '/control',
-                                    title: 'Team Control',
+                                    route: '/schedule-management',
+                                    title: 'Schedule Management',
                                     onTap: () => closeMenu(),
                                     isCollapsed: scrollY > 50
                                 }} />
                             </div>
                             <div className="">
                                 <HeaderItem props={{
-                                    route: '/custom',
+                                    route: '/roster-management',
+                                    title: 'Roster Management',
+                                    onTap: () => closeMenu(),
+                                    isCollapsed: scrollY > 50
+                                }} />
+                            </div>
+                            <div className="">
+                                <HeaderItem props={{
+                                    route: '/customization',
                                     title: 'Customization',
                                     onTap: () => closeMenu(),
                                     isCollapsed: scrollY > 50

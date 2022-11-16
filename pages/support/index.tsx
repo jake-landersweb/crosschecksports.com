@@ -11,7 +11,7 @@ import Head from "next/head"
 const Support = () => {
 
 
-    return <>
+    return <div className="">
         <Subpage props={{
             title: "How can we help?",
             tags: "team,schedule,support,help",
@@ -49,7 +49,7 @@ const Support = () => {
                 </div>
             </>
         }} />
-    </>
+    </div>
 }
 
 export default Support

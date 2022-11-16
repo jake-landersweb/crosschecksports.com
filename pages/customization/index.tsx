@@ -1,3 +1,4 @@
+import AdditionalFeatures2 from "../../components/addFeatures2";
 import Feature from "../../components/feature";
 import Subpage2 from "../../components/subpage2";
 
@@ -27,9 +28,10 @@ export default function Customization() {
                 src: "/images/pn-multiplatform.png",
                 alt: "Puck Norris Hockey Club",
                 title: "A Personalized Experience",
-                desc: "Want something more from your team experience? Crosscheck can custom make you a team website and mobile app to make sure everyone knows your beer league team's schedule!",
+                desc: "Want something more from your team experience? Crosscheck can custom make you a team website and mobile app to make sure everyone knows your beer league team's schedule! Visit https://pucknorris.com for a live demo",
                 reverse: false
             }} />
+            <AdditionalFeatures2 features={["Event Colors", "Additional Event Fields", "Image Uploading", "Team Information"]} />
         </div>
     </Subpage2>
 }

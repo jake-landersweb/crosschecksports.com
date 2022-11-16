@@ -18,11 +18,7 @@ const HockeyTemplate = () => {
                         <h2 className="text-xl text-txt-600 text-center">
                             Ice hockey is a unique sport to manage, and Crosscheck offers unique solutions. The sport this app was built around, the Crosscheck Engine is tailormade to streamline your team management and enables the builders of this app to do the same.
                         </h2>
-
                     </div>
-                    <CustomAppButtons props={{
-                        title: "Ready to build your hockey team?"
-                    }} />
                     <div className="space-y-2 px-4">
                         <h3 className="text-2xl text-center">How You Can Customize Your Experience</h3>
                         <div className="h-[1px] w-full bg-gray-200"></div>
@@ -68,13 +64,6 @@ const HockeyTemplate = () => {
                         reversed: false,
                     }} />
                     <SubpageExtras />
-                    <div className="max-w-[1000px] w-full">
-                        <Form props={{
-                            nameLabel: "Wayne",
-                            emailLabel: "gretzy@hockey.com",
-                            bodyLabel: "My hockey team vision"
-                        }} />
-                    </div>
                 </div>
             </>
         }} />

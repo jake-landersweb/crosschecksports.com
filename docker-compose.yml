@@ -1,11 +1,12 @@
 version: "3"
 
 services:
-  landersweb:
+  crosscheck:
+    container_name: crosscheck
     build:
       context: ./
       dockerfile: Dockerfile
     ports:
-      - 3001:3001
+      - 3001:3000
     volumes:
       - .:/crosscheck

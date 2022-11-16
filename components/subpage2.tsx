@@ -25,12 +25,7 @@ export default function Subpage2({ title, src, alt, tags, desc, children }: { ti
                 </div>
             </BoundsWrapper>
             <div className="">
-                <Image props={{
-                    src: "/svg/wave1.svg",
-                    alt: "Wave",
-                    divClass: "",
-                    imgClass: "w-screen"
-                }} />
+                <img src="/svg/wave1.svg" className="w-screen" />
                 <div className="bg-[#f2f2f2] py-16">
                     <BoundsWrapper>
                         {children}

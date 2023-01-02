@@ -92,6 +92,11 @@ const Header = () => {
                                     href: '/communication',
                                     isExternal: false,
                                 }} />
+                                <HoverMenuItem props={{
+                                    title: 'Merchandise',
+                                    href: '/merchandise',
+                                    isExternal: false,
+                                }} />
                                 {/* <HoverMenuItem props={{
                                     title: 'Stats',
                                     href: '/stats',
@@ -124,7 +129,7 @@ const Header = () => {
                                 }} /> */}
                             </div>
                         }} />
-                        <HoverMenu props={{
+                        {/* <HoverMenu props={{
                             title: "Sports",
                             defaultLink: "#sports",
                             type: HoverMenuType.header,
@@ -160,7 +165,7 @@ const Header = () => {
                                     isExternal: false,
                                 }} />
                             </div>
-                        }} />
+                        }} /> */}
                         <HeaderItem props={{
                             route: '/support',
                             title: 'Support',
@@ -240,6 +245,14 @@ const Header = () => {
                                 <HeaderItem props={{
                                     route: '/communication',
                                     title: 'Communication',
+                                    onTap: () => closeMenu(),
+                                    isCollapsed: scrollY > 50
+                                }} />
+                            </div>
+                            <div className="">
+                                <HeaderItem props={{
+                                    route: '/merchandise',
+                                    title: 'Merchansise',
                                     onTap: () => closeMenu(),
                                     isCollapsed: scrollY > 50
                                 }} />

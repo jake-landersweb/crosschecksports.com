@@ -265,6 +265,15 @@ const Header = () => {
                                     isCollapsed: scrollY > 50
                                 }} />
                             </div>
+                            <div className="">
+                                <HeaderItem props={{
+                                    route: 'https://teams.crosschecksports.com',
+                                    title: 'Login',
+                                    isExternal: true,
+                                    onTap: () => closeMenu(),
+                                    isCollapsed: scrollY > 50
+                                }} />
+                            </div>
                         </div>
                     </div>
                     {menu("space-y-2")}

@@ -1,6 +1,5 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import Link from 'next/link'
 import Feature from '../components/feature'
 import Image from '../components/image'
 import styles from '../styles/Home.module.css'
@@ -18,6 +17,7 @@ import Difference from '../components/difference'
 import Sports from '../components/sports'
 import AdditionalFeatures from '../components/addFeatures'
 import FormOnboard from '../components/form/formOnboard'
+import Link from '../components/link'
 
 const Home: NextPage = () => {
 
@@ -34,7 +34,17 @@ const Home: NextPage = () => {
               cursorClass: "text-txt",
               infinite: true,
             }} /></h2>
-            <p className='subtext-lg hidden md:block'>{desc}</p>
+            <div className="hidden md:block">
+              <p className='subtext-lg'>{desc}</p>
+              <div className="pt-4">
+                <Link props={{
+                  href: 'https://teams.crosschecksports.com/Account/Register',
+                  child: <>Get Started</>,
+                  isExternal: true,
+                  className: "btn-main"
+                }} />
+              </div>
+            </div>
           </div>
           <Image props={{
             src: '/svg/game-day.svg',
@@ -42,7 +52,17 @@ const Home: NextPage = () => {
             divClass: "",
             imgClass: ""
           }} />
-          <p className='subtext-lg text-center md:hidden'>{desc}</p>
+          <div className="md:hidden">
+            <p className='subtext-lg text-center'>{desc}</p>
+            <div className="pt-4 grid place-items-center">
+              <Link props={{
+                href: 'https://teams.crosschecksports.com/Account/Register',
+                child: <>Get Started</>,
+                isExternal: true,
+                className: "btn-main"
+              }} />
+            </div>
+          </div>
         </div>
         <Difference />
       </div>

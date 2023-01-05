@@ -47,7 +47,7 @@ const Support = () => {
                         </>)}
                     </div>
                     <div className="grid place-items-center">
-                        <h3 className="text-2xl font-bold">Didn't find what you need?</h3>
+                        <h3 className="text-2xl font-bold">Didn&apos;t find what you need?</h3>
                         <p className="text-gray-500">Reach out to Support directly:</p>
                         <div className="">
                             <p>Email: <a href="mailto:support@crosschecksports" className="text-main underline hover:text-gray-400 hover:underline">support@crosschecksports.com</a></p>

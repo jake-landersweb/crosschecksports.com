@@ -93,6 +93,11 @@ const Header = () => {
                                     isExternal: false,
                                 }} />
                                 <HoverMenuItem props={{
+                                    title: 'Calendar Tools',
+                                    href: '/calendar',
+                                    isExternal: false,
+                                }} />
+                                <HoverMenuItem props={{
                                     title: 'Merchandise',
                                     href: '/merchandise',
                                     isExternal: false,
@@ -245,6 +250,14 @@ const Header = () => {
                                 <HeaderItem props={{
                                     route: '/communication',
                                     title: 'Communication',
+                                    onTap: () => closeMenu(),
+                                    isCollapsed: scrollY > 50
+                                }} />
+                            </div>
+                            <div className="">
+                                <HeaderItem props={{
+                                    route: '/calendar',
+                                    title: 'Calendar',
                                     onTap: () => closeMenu(),
                                     isCollapsed: scrollY > 50
                                 }} />

@@ -5,6 +5,17 @@ module.exports = {
   ],
   theme: {
     extend: {
+      typography: {
+        DEFAULT: {
+          css: {
+            pre: false,
+            code: false,
+            'pre code': false,
+            'code::before': false,
+            'code::after': false
+          }
+        }
+      },
       colors: {
         bg: {
           DEFAULT: "#fff",
@@ -32,5 +43,7 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/typography'),
+  ],
 }

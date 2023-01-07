@@ -19,7 +19,7 @@ const Subpage = ({ props }: { props: SubpageProps }) => {
         <div className="grid place-items-center mb-32">
             <div className={`max-w-[${maxWidth}px] w-full space-y-8 md:space-y-32`}>
                 <div className="grid place-items-center">
-                    <h2 className="text-4xl md:text-6xl md:pt-[50px] font-medium tracking-tight">{title}</h2>
+                    <h2 className="text-4xl md:text-5xl md:pt-[50px] font-medium tracking-tight">{title}</h2>
                 </div>
                 {content}
             </div>

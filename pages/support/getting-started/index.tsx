@@ -1,17 +1,9 @@
 import Head from "next/head"
 import InfoCell from "../../../components/infoCell"
+import MarkdownRenderer from "../../../components/markdownRenderer/markdownRenderer"
 import Subpage from "../../../components/subpage/subpage"
 
 const GettingStarted = () => {
-
-    const cell = (label: string, body: JSX.Element) => {
-        return <>
-            <div className="space-y-2">
-                <h3 className="label">{label}</h3>
-                <div className="body">{body}</div>
-            </div>
-        </>
-    }
 
     return <>
         <Subpage props={{

@@ -11,6 +11,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   return <div className="">
     <Head>
       <meta charSet="UTF-8" />
+      <title>Crosscheck Team App</title>
       <meta
         name="viewport"
         content="width=device-width, initial-scale=1.0"
@@ -70,7 +71,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       <div className="relative pt-[100px]">
         <Component {...pageProps} />
       </div>
-      <div className="w-full">
+      <div className="w-full z-40">
         <Footer />
       </div>
     </div>

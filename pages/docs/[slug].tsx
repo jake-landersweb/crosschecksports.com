@@ -48,7 +48,7 @@ const Doc = ({ doc, nextCellData }: InferGetStaticPropsType<typeof getStaticProp
         return items
     }
 
-    return <div className="my-[50px] md:my-[100px]">
+    return <div className="my-[50px] md:my-[50px]">
         <BoundsWrapper>
             <div className="space-y-4">
                 <h1 className="text-4xl md:text-5xl font-semibold text-center md:text-left">{doc.data.title}</h1>

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { FcApprove, FcAutomatic, FcBarChart, FcCalendar, FcCollaboration, FcConferenceCall, FcOvertime, FcPlanner, FcPrivacy, FcQuestions, FcSearch, FcSportsMode } from "react-icons/fc";
+import { FcApprove, FcAutomatic, FcBarChart, FcCalendar, FcCollaboration, FcConferenceCall, FcDataSheet, FcOvertime, FcPlanner, FcPrivacy, FcQuestions, FcSearch, FcSportsMode } from "react-icons/fc";
 
 export default function DocCell({ docData }: { docData: { slug: string, data: { title: string, description: string, icon: string } } }) {
 
@@ -16,6 +16,7 @@ export default function DocCell({ docData }: { docData: { slug: string, data: { 
             case "bargraph": return <FcBarChart size={50} />
             case "gear": return <FcAutomatic size={50} />
             case "search": return <FcSearch size={50} />
+            case "datasheet": return <FcDataSheet size={50} />
             default: return <FcQuestions size={50} />
         }
     }

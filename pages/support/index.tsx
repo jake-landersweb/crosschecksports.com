@@ -1,13 +1,46 @@
 import Form from "../../components/form/form"
 import Subpage from "../../components/subpage/subpage"
 
-import { IoHelpOutline, IoShareSocialOutline, IoPeopleOutline } from 'react-icons/io5'
-import { AiOutlineTeam } from 'react-icons/ai'
+import { IoHelpOutline, IoPeopleOutline } from 'react-icons/io5'
 import { BsGear, BsCalendarWeek } from 'react-icons/bs'
 import { MdOutlinePrivacyTip, MdOutlineSportsTennis } from 'react-icons/md'
 import Link from "next/link"
+import { GetStaticProps } from "next"
+import getAllDocs from "../../lib/getAllDocs"
+import DocCell from "../../components/docCell"
 
-const Support = () => {
+export const getStaticProps: GetStaticProps = async (context) => {
+    console.log(context)
+    const docs = await getAllDocs()
+
+    const allowed = ["01-getting-started", "join-team", "adding-users", "create-team"]
+
+    const filteredDocs: any[] = []
+
+    for (var i = 0; i < docs.length; i++) {
+        if (allowed.includes(docs[i].slug)) {
+            filteredDocs.push(docs[i])
+        }
+    }
+
+    return {
+        props: {
+            filteredDocs
+        },
+    };
+}
+
+const Support = ({ filteredDocs }: { filteredDocs: any[] }) => {
+
+    const getDocs = () => {
+        const items: any[] = []
+
+        for (var i = 0; i < filteredDocs.length; i++) {
+            items.push(<DocCell docData={filteredDocs[i]} />)
+        }
+
+        return items
+    }
 
     return <div className="">
         <Subpage props={{
@@ -20,23 +53,12 @@ const Support = () => {
                     }} />
 
                     <div className="space-y-4">
-                        <h2 className="title-sm">Additional Resources</h2>
-                        <div className="px-0 grid grid-cols-1 gap-4">
-                            {HelpCell("Getting Started", "/support/getting-started", <>
-                                <IoHelpOutline size={50} className="text-main" />
-                            </>, "New to Crosscheck? Check out this simple guide for getting familiar with some of the basic features of Crosscheck Sports.")}
-                            {HelpCell("Creating a Team", "/support/team-create", <>
-                                <IoPeopleOutline size={50} className="text-main" />
-                            </>, "Check out this comprehensive guide for creating a team within Crosscheck. Learn how to customize the color, upload a logo, and more.")}
-                            {HelpCell("Creating a Season", "/support/season-create", <>
-                                <MdOutlineSportsTennis size={50} className="text-main" />
-                            </>, "Need some help creating a season with Crosscheck? This guide will cover all of the major features seasons have to offer.")}
-                            {HelpCell("Creating an Event", "/support/event-create", <>
-                                <BsCalendarWeek size={50} className="text-main" />
-                            </>, "Events can come in all shapes, sizes, and flavors. Learn how to make them work for your team in this guide.")}
-                            {HelpCell("Privacy Policy", "/privacy-policy", <>
-                                <MdOutlinePrivacyTip size={50} className="text-main" />
-                            </>, "")}
+                        <h2 className="title-sm text-center font-medium">Additional Resources</h2>
+                        <div className="px-0 grid md:grid-cols-2 gap-2 md:gap-4">
+                            {getDocs()}
+                        </div>
+                        <div className="grid place-items-center pt-4">
+                            <Link href={"/docs"}><p className="text-gray-500 md:hover:opacity-50 hover:cursor-pointer transition-all">View all documentation &rarr;</p></Link>
                         </div>
                     </div>
                     <div className="grid place-items-center">

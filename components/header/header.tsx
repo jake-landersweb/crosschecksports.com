@@ -50,8 +50,8 @@ const Header = () => {
     return (
         <div className={`${scrollY > 50 ? "bg-bg-800 shadow-md" : "bg-bg bg-opacity-50 backdrop-blur-sm md:py-4"} py-2 items-center w-screen grid place-items-center transition-all duration-300 fixed top-0 left-0`}>
             <div className="flex items-center justify-between max-w-[2000px] w-full px-2 lg:px-20 md:px-10">
-                <div className="flex space-x-4 w-full">
-                    <div className="">
+                <div className="flex w-full justify-between">
+                    <div className=" ">
                         <Link href="/">
                             <a onClick={(e) => closeMenu()}>
                                 <div className="group flex items-center transition-all">
@@ -66,7 +66,7 @@ const Header = () => {
                             </a>
                         </Link>
                     </div>
-                    <div className="hidden md:flex justify-around w-full">
+                    <div className="hidden md:flex">
                         <HoverMenu props={{
                             title: "Features",
                             defaultLink: "#features",
@@ -92,11 +92,11 @@ const Header = () => {
                                     href: '/communication',
                                     isExternal: false,
                                 }} />
-                                <HoverMenuItem props={{
+                                {/* <HoverMenuItem props={{
                                     title: 'Calendar Tools',
                                     href: '/calendar',
                                     isExternal: false,
-                                }} />
+                                }} /> */}
                                 <HoverMenuItem props={{
                                     title: 'Merchandise',
                                     href: '/merchandise',
@@ -171,6 +171,12 @@ const Header = () => {
                                 }} />
                             </div>
                         }} /> */}
+                        <HeaderItem props={{
+                            route: '/team-owners',
+                            title: 'For Team Owners',
+                            onTap: () => closeMenu(),
+                            isCollapsed: scrollY > 50
+                        }} />
                         <HeaderItem props={{
                             route: '/support',
                             title: 'Support',
@@ -254,18 +260,27 @@ const Header = () => {
                                     isCollapsed: scrollY > 50
                                 }} />
                             </div>
-                            <div className="">
+                            {/* <div className="">
                                 <HeaderItem props={{
                                     route: '/calendar',
                                     title: 'Calendar',
                                     onTap: () => closeMenu(),
                                     isCollapsed: scrollY > 50
                                 }} />
-                            </div>
+                            </div> */}
                             <div className="">
                                 <HeaderItem props={{
                                     route: '/merchandise',
                                     title: 'Merchansise',
+                                    onTap: () => closeMenu(),
+                                    isCollapsed: scrollY > 50
+                                }} />
+                            </div>
+                            <div className="">
+                                <HeaderItem props={{
+                                    route: '/team-owners',
+                                    title: 'For Team Owners',
+                                    isExternal: true,
                                     onTap: () => closeMenu(),
                                     isCollapsed: scrollY > 50
                                 }} />

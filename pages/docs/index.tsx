@@ -31,7 +31,7 @@ export default function Docs({ docs }: { docs: any[] }) {
         content: <div className="grid md:grid-cols-2 gap-2 md:gap-4">
             {getDocs()}
         </div>,
-        barTitle: "Crosscheck - Documentation",
+        barTitle: "Documentation",
         tags: "documentation,getting started,create sports team,create sports season,create sports game",
         maxWidth: undefined
     }} />

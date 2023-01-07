@@ -17,15 +17,13 @@ Whether you received an email to join a team or not, you will need to create an 
 
 If you already have an account you can click "Login". If you forgot your password, you can recreate it on the login page by selecting "Forgot password".
 
-!! login screen image
+![Login screen Crosscheck {caption: Create and login pages}](/images/docs/login.png)
 
 ## Navigating the App
 
 The app's main navigation is in the form of a tab bar. Depending on your current state, or whether you are part of a team and season, the app bar will have different icons present.
 
 ### Basic Tab Bar
-
-!! base tab bar
 
 When you first log in, you will only see the app home page and the user account page. If you are going to create a team, go ahead and click on "Create Team" to follow the wizard. You can also follow the guide to creating a team [here](/docs/create-team).
 
@@ -35,7 +33,7 @@ If instead you have an app code, you can join the team on this screen as well, o
 
 When you are a member of a season, there will be many more options available to you on the dashboard.
 
-!! full dashboard page
+![Dashboard of sports app {caption: Full dashboard page}](/images/docs/full-dashboard.png)
 
 These include:
 
@@ -56,12 +54,12 @@ These include:
         - Information about the current season can be found here.
 - Profile
 
-!! Show poll and chat pages side by side
+![Poll and chat page sports {caption: A poll and the chat page}](/images/docs/poll-and-chat.png)
 
 ## Profile
 
 Your profile page will always be the furthest right tab on the tab bar.
 
-!! show image of profile
+![Profile user sports app {caption: User profile page}](/images/docs/profile.png)
 
 This is where you can edit your name, phone number, nickname, current team, and notification settings, along with leaving suggestions, logging out, and deleting your account.

@@ -7,7 +7,7 @@ import FormOnboard from "../form/formOnboard"
 import BoundsWrapper from "../boundsWrapper"
 
 const Footer = () => {
-    return <div className="bg-txt pt-24">
+    return <div className="bg-txt pt-24 z-50">
         <BoundsWrapper>
             <FormOnboard />
         </BoundsWrapper>
@@ -40,6 +40,9 @@ const Footer = () => {
                                 <li className="mb-4">
                                     <Link href="/privacy-policy" passHref><a className="hover:underline">Privacy Policy</a></Link>
                                 </li>
+                                <li className="mb-4">
+                                    <Link href="/docs" passHref><a className="hover:underline">Documentation</a></Link>
+                                </li>
                             </ul>
                         </div>
                         <div>
@@ -48,8 +51,11 @@ const Footer = () => {
                                 <li className="mb-4">
                                     <a href="https://github.com/jake-landersweb" target="_blank" rel="noopener noreferrer" className="hover:underline ">Github</a>
                                 </li>
-                                <li>
+                                <li className="mb-4">
                                     <a href="https://www.instagram.com/xchecksports/" target="_blank" rel="noopener noreferrer" className="hover:underline">Instagram</a>
+                                </li>
+                                <li>
+                                    <a href="https://twitter.com/xchecksports" target="_blank" rel="noopener noreferrer" className="hover:underline">Twitter</a>
                                 </li>
                             </ul>
                         </div>

@@ -10,7 +10,7 @@ export default function Sports() {
                 src: src,
                 alt: alt,
                 divClass: "",
-                imgClass: "h-[45px] w-[45px]"
+                imgClass: "h-[75px] w-[75px]"
             }} />
             {/* </div> */}
             {/* <Link props={{
@@ -29,12 +29,12 @@ export default function Sports() {
             <p className="subtext-lg max-w-2xl text-center">These are the sports we support out of the box. If the sport you play is not in this list, no worry! All of these templates were created using the base features of Crosscheck, and are completely re-creatable. <Link passHref href="/support/team-create/"><a className="underline md:hover:no-underline md:hover:text-main transition-all hover:cursor-pointer">Learn how to create a sports team here.</a></Link></p>
         </div>
         <div className="grid grid-cols-2 md:grid-cols-3 gap-16">
-            {cell("Ice Hockey", "/svg/hockey.svg", "Hockey Puck", "/ice-hockey")}
-            {cell("Golf", "/svg/golf.svg", "Golf Ball", "/golf")}
-            {cell("Basketball", "/svg/basketball.svg", "Basketball", "/basketball")}
-            {cell("Football", "/svg/football.svg", "Football", "/football")}
-            {cell("Soccer", "/svg/soccer.svg", "Soccer Ball", "/soccer")}
-            {cell("Baseball", "/svg/baseball.svg", "Baseball Bat", "/baseball")}
+            {cell("Ice Hockey", "/images/icons/ice-hockey.png", "Hockey Puck", "/ice-hockey")}
+            {cell("Golf", "/images/icons/golf.png", "Golf Ball", "/golf")}
+            {cell("Basketball", "/images/icons/basketball.png", "Basketball", "/basketball")}
+            {cell("Football", "/images/icons/football.png", "Football", "/football")}
+            {cell("Soccer", "/images/icons/soccer.png", "Soccer Ball", "/soccer")}
+            {cell("Baseball", "/images/icons/baseball.png", "Baseball Bat", "/baseball")}
         </div>
     </div>
 }

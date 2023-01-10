@@ -73,7 +73,7 @@ const Home: NextPage = () => {
               enable: true,
               area: 1000,
             },
-            value: 4,
+            value: 3,
           },
           opacity: {
             value: 0.3,

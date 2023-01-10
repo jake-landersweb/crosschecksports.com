@@ -74,21 +74,25 @@ const Header = () => {
                             content: <div className=''>
                                 <HoverMenuItem props={{
                                     title: 'Schedule Management',
+                                    desc: "Schedule management makes up the backbone of what Crosscheck gives team owners.",
                                     href: '/schedule-management',
                                     isExternal: false,
                                 }} />
                                 <HoverMenuItem props={{
                                     title: 'Roster Management',
+                                    desc: "Crosscheck offers some unique approaches to roster management.",
                                     href: '/roster-management',
                                     isExternal: false,
                                 }} />
                                 <HoverMenuItem props={{
                                     title: 'Customization',
+                                    desc: "Crosscheck has powerful customization features to personalize your team experience.",
                                     href: '/customization',
                                     isExternal: false,
                                 }} />
                                 <HoverMenuItem props={{
                                     title: 'Communication',
+                                    desc: "Full featured chat, comments, mass emails, notifications, and more.",
                                     href: '/communication',
                                     isExternal: false,
                                 }} />
@@ -99,6 +103,7 @@ const Header = () => {
                                 }} /> */}
                                 <HoverMenuItem props={{
                                     title: 'Merchandise',
+                                    desc: "We can setup an easy to manage shop for you to sell merchandise.",
                                     href: '/merchandise',
                                     isExternal: false,
                                 }} />

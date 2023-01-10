@@ -35,7 +35,7 @@ const HoverMenu = ({ props }: { props: HoverMenuProps }) => {
                 <ul className="z-50 w-fit max-w-[500px] min-w-[250px] mx-auto absolute invisible opacity-0 group-hover:opacity-100 scale-[.8] group-hover:scale-100 group-hover:visible transition-all duration-75">
                     <div className="h-1 bg-transparent"></div>
                     <div className="overflow-y-scroll max-h-[75vh] border-t-8 border-t-main rounded-md bg-bg shadow-xl space-y-4">
-                        <div className="p-2">
+                        <div className="p-1">
                             {content}
                         </div>
                     </div>

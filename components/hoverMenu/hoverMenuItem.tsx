@@ -2,20 +2,26 @@ import Link from "next/link"
 
 type HoverMenuItemProps = {
     title: string
+    desc: string
     href: string
     isExternal?: boolean
 }
 
 const HoverMenuItem = ({ props }: { props: HoverMenuItemProps }) => {
-    const { title, href, isExternal = false } = props
+    const { title, desc, href, isExternal = false } = props
+
+    const content = () => {
+        return <div className="md:hover:bg-bg-700 py-2 px-4 cursor-pointer rounded-md">
+            <p className="font-medium">{title}</p>
+            <p className="text-gray-400">{desc}</p>
+        </div>
+    }
 
     if (isExternal) {
         return <>
             <div className="">
                 <a href={href} target="_blank" rel="noopener noreferrer">
-                    <div className="md:hover:bg-bg-700 py-2 px-4 cursor-pointer rounded-md">
-                        <p>{title}</p>
-                    </div>
+                    {content()}
                 </a>
             </div>
         </>
@@ -23,9 +29,7 @@ const HoverMenuItem = ({ props }: { props: HoverMenuItemProps }) => {
         return <>
             <Link href={href} passHref>
                 <a className="">
-                    <div className="md:hover:bg-bg-700 py-2 px-4 cursor-pointer rounded-md">
-                        <p>{title}</p>
-                    </div>
+                    {content()}
                 </a>
             </Link>
         </>

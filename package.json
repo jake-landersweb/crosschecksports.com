@@ -10,6 +10,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "file-saver": "^2.0.5",
     "gray-matter": "^4.0.3",
     "next": "12.2.3",
     "next-sitemap": "^2.5.28",

@@ -1,8 +1,5 @@
 import Link from "next/link"
-import Image from "../image"
 import AppButtons from "../mobileButtons/appButtons"
-import CustomAppButtons from "../mobileButtons/customButtons"
-import { FaGlobeAmericas } from 'react-icons/fa'
 import FormOnboard from "../form/formOnboard"
 import BoundsWrapper from "../boundsWrapper"
 

@@ -31,7 +31,8 @@ const RosterForm = () => {
         alt={"Excel Sheet"}
         tags={"sports,roster,download template,excel upload,management app,sports management app"}
         desc={"Crosscheck Sports suppports downloading an excel sheet that you can fill out with your roster to upload when creating a team or a season."}
-        children={<div className=" grid place-items-center">
+    >
+        <div className=" grid place-items-center">
             <div className="max-w-2xl">
                 <div className="space-y-16">
                     <h2 className="title grid place-items-center">As Easy as 1, 2, 3</h2>
@@ -44,8 +45,8 @@ const RosterForm = () => {
                     </div>)}
                 </div>
             </div>
-        </div>}
-    />
+        </div>
+    </Subpage2>
 }
 
 export default RosterForm

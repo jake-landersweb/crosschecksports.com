@@ -139,17 +139,6 @@ Landersweb LLC Jake Landers 14355 sw racely place tigard, OR 97224 United States
 
 const PrivacyPolicy = () => {
 
-    const section = (title: string, paragraphs: string[]) => {
-        const para: JSX.Element[] = [];
-        for (let i = 0; i < paragraphs.length; i++) {
-            para.push(<p>{paragraphs[i]}</p>);
-        }
-        return <div className="space-y-2">
-            <h4 className="text-2xl font-bold">{title}</h4>
-            {para}
-        </div>
-    }
-
     return <BoundsWrapper>
         <div className="space-y-2 mb-20">
             <h2 className="text-3xl md:text-4xl font-bold">Privacy Policy</h2>
